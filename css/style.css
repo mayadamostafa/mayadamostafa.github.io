@@ -68,28 +68,46 @@ body{
 }
 .masthead a{
 	display: inline-block;
-    position: absolute; ;
-    top: 50% ;
-    left: 34%;     
+    position: relative; ;    
     color: #ffffff;
     font-size: 14px;
     font-weight: normal;
     width: 15%;
+    transition: all ease-out  .35s;
+  position: relative;
+   top: 50%;
+  left: 44%;
+  border-color: #eee;
+border-radius: 12px;
     
+}
+
+.masthead a:before {
+
+  transition: all ease-out .35s;
+}
+.masthead a:after {
+
+  transition: all ease-out .35s;
 }
 .masthead a:hover{
     background-color: #ffbd1a;
     border-color: #ffbd1a;
 }
-.masthead .btn-outline{
-    border-color: #eee;
-    border-radius: 26px;
-    width: 25%;
+.masthead a:hover:after {
+  transform: translateX(4px);
+  transition: all ease-out .35s;
 }
+.masthead a:hover:before {
+  transform: translateX(-4px);
+  transition: all ease-out .35s;
+}
+
 #black {
     background-color: #282828;
     border-color: #282828;
 }
+
 
 .slider{
     width: 100%;
@@ -219,6 +237,7 @@ body{
 .social a:hover{
   text-decoration-line: none;    
 }
+}
 
 @media (min-width: 950px){
     .sence .row{
@@ -232,7 +251,7 @@ body{
     }
 
 }
-@media (min-width: 360px){
+@media (min-width: 300px){
    .work-us a{
     display: inline-block;
     position: relative;
@@ -284,25 +303,48 @@ body{
     padding: 2%;
 }
 .masthead a{
-    
-       
+    display: inline-block;
+    position: relative; ;    
     color: #ffffff;
     font-size: 14px;
     font-weight: normal;
+    width: 35%;
+    transition: all ease-out  .35s;
+  position: relative;
+   top: 50%;
+  left: 32%;
+  border-color: #eee;
+border-radius: 12px;
     
+}
+
+.masthead a:before {
+
+  transition: all ease-out .35s;
+}
+.masthead a:after {
+
+  transition: all ease-out .35s;
 }
 .masthead a:hover{
     background-color: #ffbd1a;
     border-color: #ffbd1a;
 }
-.masthead .btn-outline{
-    border-color: #eee;
-    border-radius: 26px;
-    width: 30%;
-     position: relative; ;
-    top: 45% ;
-    left: 34%; 
+.masthead a:hover:after {
+  transform: translateX(4px);
+  transition: all ease-out .35s;
 }
+.masthead a:hover:before {
+  transform: translateX(-4px);
+  transition: all ease-out .35s;
+}
+
+#black {
+    background-color: #282828;
+    border-color: #282828;
+}
+} 
+
 
 
 
